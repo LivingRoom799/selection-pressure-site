@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Climate Crisis";
+  src: url("ClimateCrisis-YEAR.ttf") format("truetype");
+  font-display: swap;
+}
+:root {
+  --water: #12343b;
+  --mud: #54463a;
+  --ink: #f2ecde;
+  --ink-dim: #c4b8a0;
+  --food: #9cc56b;
+  --orange: #f2a65a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--water);
+  color: var(--ink);
+  font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 640px; margin: 0 auto; padding: 48px 16px 64px; }
+h1 {
+  font-family: "Climate Crisis", system-ui, sans-serif;
+  font-variation-settings: "YEAR" 2010;
+  font-weight: normal;
+  font-size: clamp(34px, 9vw, 56px);
+  line-height: 1;
+  margin: 0 0 8px;
+  letter-spacing: 0.01em;
+}
+h2 { font-size: 19px; margin: 32px 0 6px; }
+p, li { color: var(--ink-dim); }
+strong { color: var(--ink); }
+a { color: var(--orange); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+.head { display: flex; gap: 18px; align-items: center; margin-bottom: 24px; }
+.head img { width: 88px; height: 88px; border-radius: 50%; flex: none; }
+.tag { margin: 0; color: var(--food); font-weight: 600; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--mud); font-size: 14px; }
+footer p { margin: 4px 0; }
